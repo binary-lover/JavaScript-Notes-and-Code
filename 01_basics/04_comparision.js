@@ -19,3 +19,29 @@ console.log(null >= 0);
 
 console.log("2" == 2);
 console.log("2" === 2);
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// memory type
+
+// Stack (Premitive), Heap (Non-premitive)
+
+let myYouotubename = "Binarylover";
+
+let anotherName = myYouotubename;
+// anotherName = "Bad kings";
+
+console.log(myYouotubename);
+console.log(anotherName);
+
+let user = {
+    name:"binarylover",
+    email:"binarylover@gmail.com",
+    UPI:"user1@ylp"
+}
+
+let user2 = user;
+user2.name = "binarylover2"
+
+console.log(user.name)
+console.log(user2.name);
