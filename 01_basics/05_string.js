@@ -1,7 +1,7 @@
 const name1 = "binarylover";
 const repoCount = 21;
 
-// console.log(name + repoCount+ " Value");
+// console.log(name + repoCount+ " Value"); // old fassion
 
 console.log(`Hello my name is ${name1} and my repo count is ${repoCount}`);  // string interpolation
 

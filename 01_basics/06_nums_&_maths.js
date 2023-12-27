@@ -30,3 +30,25 @@ console.log(Math.min(4,3,2,6,5));
 console.log(Math.max(4,3,2,6,5));
 
 console.log((Math.random()*10) + 1);
+
+const min = 10;
+const max = 20;
+
+const betweenTentoTwenty = Math.floor(Math.random()*(max-min)+1) + 9;  // Generate number between 10-20 (both incluted)
+console.log(betweenTentoTwenty);
+
+const oneToHundred = Math.floor(Math.random()*100 + 1)
+console.log(oneToHundred);
+
+let  x = 0;
+let arr = [];
+while(x<100){
+    const between15to35 = Math.floor(Math.random()*(35-15 + 1) ) + 15  // It will generate numbe in (15,35)
+    x++;
+    arr.push(between15to35)
+}
+console.log(arr.sort());
+
+
+// Math.foor(Math.random()*(max - min + 1)) + min  // it will genrate any range of number
+
