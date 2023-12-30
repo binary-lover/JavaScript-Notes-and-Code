@@ -53,13 +53,39 @@ const users = [
     }
 ]
 
-console.log(users[1].email);
-console.log(tinderUser);
+// console.log(users[1].email);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // it returns array of keys in tinderUser
-console.log(Array.from(Object.keys(tinderUser)));
-console.log(Array.from(Object.values(tinderUser)));
+// console.log(Object.keys(tinderUser)); // it returns array of keys in tinderUser
+// console.log(Array.from(Object.keys(tinderUser)));
+// console.log(Array.from(Object.values(tinderUser)));
 
-console.log(Object.entries(tinderUser)); // [ [ 'id', '123abc' ], [ 'Name', 'noha' ], [ 'isLoggedIn', false ] ]
+// console.log(Object.entries(tinderUser)); // [ [ 'id', '123abc' ], [ 'Name', 'noha' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('id')); // check for keys
+// console.log(tinderUser.hasOwnProperty('id')); // check for keys
+
+
+const course = {
+    courseName:"js in hindi",
+    price:"999",
+    courseInstructor:"hitesh"
+}
+
+// Destructure of objects 
+
+// console.log(course.courseInstructor);
+
+const {courseInstructor:teacher} = course // hare we can direct access the values and modify keys
+console.log(teacher);
+
+const {price} = course
+console.log(price);
+
+const {courseName} = course
+console.log(courseName);
+
+// {
+//     "name":"hitesh",
+//     "coursNAme": " js in hindi",
+//     "price":"free"
+// }
