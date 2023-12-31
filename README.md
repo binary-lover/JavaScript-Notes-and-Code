@@ -5,28 +5,28 @@
 
 
 ## Main topics of Ec6
-* The let keyword
-* The const keyword
-* Arrow Functions
-* The ... Operator
+* The let keyword   &#x2714;
+* The const keyword &#x2714;
+* Arrow Functions &#x2714;
+* The ... Operator &#x2714;
 * For/of
 * Map Objects
 * Set Objects
 * Classes
 * Promises
-* Symbol
-* Default Parameters
-* Function Rest Parameter
-* String.includes()
-* String.startsWith()
-* String.endsWith()
-* Array.from()
-* Array keys()
-* Array find()
-* Array findIndex()
-* New Math Methods
-* New Number Properties
-* New Number Methods
+* Symbol &#x2714;
+* Default Parameters &#x2714;
+* Function Rest Parameter &#x2714;
+* String.includes() &#x2714;
+* String.startsWith() &#x2714;
+* String.endsWith() &#x2714;
+* Array.from() &#x2714;
+* Array.keys() &#x2714;
+* Array.find() &#x2714;
+* Array findIndex() &#x2714;
+* New Math Methods &#x2714;
+* New Number Properties &#x2714;
+* New Number Methods &#x2714;
 * New Global Methods
-* Object entries
+* Object entries &#x2714;
 * JavaScript Modules
