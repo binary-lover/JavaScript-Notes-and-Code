@@ -5,7 +5,7 @@ const repoCount = 21;
 
 console.log(`Hello my name is ${name1} and my repo count is ${repoCount}`);  // string interpolation
 
-const name2 = new String("binanry-lover");
+const name2 = new String("binanry-lover"); // another method to decleare string
 
 console.log(name2.__proto__);
 console.log(name2.toUpperCase());

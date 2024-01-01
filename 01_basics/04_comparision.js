@@ -26,14 +26,17 @@ console.log("2" === 2);
 
 // Stack (Premitive), Heap (Non-premitive)
 
+// primitive using stack here
 let myYouotubename = "Binarylover";
 
 let anotherName = myYouotubename;
-// anotherName = "Bad kings";
+anotherName = "Bad kings";
 
 console.log(myYouotubename);
 console.log(anotherName);
 
+
+// non-premitive - object using heep memory
 let user = {
     name:"binarylover",
     email:"binarylover@gmail.com",
@@ -43,5 +46,5 @@ let user = {
 let user2 = user;
 user2.name = "binarylover2"
 
-console.log(user.name)
-console.log(user2.name);
+// console.log(user.name);
+// console.log(user2.name);

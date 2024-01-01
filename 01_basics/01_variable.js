@@ -3,8 +3,7 @@ let accountEmail = "lucky@gmail.com"
 var accountPawword = "12345" 
 accounCity = "jaipur" // also possible
 let nameOfBook
-
-// accountId = 2    // Not allowed
+// accountId = 2    // Not allowed as it defined as const
 
 accountEmail = "lu@co.in"
 accountPawword = "23434"
