@@ -9,8 +9,8 @@
 * The const keyword &#x2714;
 * Arrow Functions &#x2714;
 * The ... Operator &#x2714;
-* For/of
-* Map Objects
+* For/of &#x2714;
+* Map Objects &#x2714;
 * Set Objects
 * Classes
 * Promises
