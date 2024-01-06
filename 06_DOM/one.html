@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class = "heading">DOM Learning On Binary Lover 1 <span style="display:none">innter wala text1 </span></h1>
+        <h1 id="title2" class = "heading">DOM Learning On Binary Lover 2 <span style="display:none">innter wala text2 </span></h1>
+        <h2 id="title3" class = "heading">DOM Learning On Binary Lover 3 <span style="display:none">innter wala text3 </span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus?</p>
+    </div>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+
+
+    <script>
+        // document.getElementById('title').innerHTML = "Aasan hai..!"
+        document.getElementById('title').style.padding = "10px"
+        document.getElementById('title').style.borderRadius = "10px"
+        document.getElementById('title').style.backgroundColor = "green"
+        document.getElementsByTagName('ul')
+
+        // difference between inn0erText  and innerHTML
+        // console.log(title.innerText) // it does not diplay content which is hidden like in case of ==> "display: none"
+        // console.log(title.textContent) // it display the actual content
+        // console.log(title.innerHTML) // it display tags also which is in the perticular seciton it returns HTML
+
+        // Query Selector
+
+       console.log(document.querySelector('#title'))
+       let one = document.querySelector(".heading")
+       // mpw we can use one.forEach
+       
+
+
+    </script>
+
+</body>
+</html>
