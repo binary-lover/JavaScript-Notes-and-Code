@@ -27,7 +27,7 @@
 * New Math Methods &#x2714;
 * New Number Properties &#x2714;
 * New Number Methods &#x2714;
-* New Global Methods
+* New Global Methods &#x2714;
 * Object entries &#x2714;
 * JavaScript Modules
 
