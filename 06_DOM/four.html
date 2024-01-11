@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM </title>
+</head>
+
+<body style="background-color: black; color:white;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+
+    // add more list items
+    function addLanguage(langName){
+        const select1 = document.createElement('li')
+        select1.innerHTML = `${langName}`
+        document.body.querySelector(".language").appendChild(select1)
+        console.log(select1)
+        
+    }
+    addLanguage("pytthon") 
+    
+    // doing same thing in optimised way
+    function addOptiLang(langName){
+        const select1 = document.createElement("li")
+        select1.appendChild(document.createTextNode(langName))  
+
+        document.querySelector(".language").appendChild(select1)
+    }
+    addOptiLang("JAVA")
+
+    // Edit
+
+    const secLang = document.querySelector("li:nth-child(2)")
+    // secLang.innerHTML = "Mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "typescript"
+    secLang.replaceWith(newli)
+
+    //edit 
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>Bhailang</li>'
+
+
+    // remove
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+    
+</script>
+</html>
