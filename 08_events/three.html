@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+
+    <h1>Binary lover</h1>
+    <button id="start">start</button>    
+    <button id="stop">stop</button>    
+</body>
+<script>
+    const date = function(str,str2){
+        console.log(str,str2,Date.now().toLocaleString())
+    }
+
+    let dateInderval = setInterval(date,1000,"sharma","aman")
+    // setTimeout(date,1000,"lucky","ansari") // you can pass paremeter to the funciton 
+
+    document.getElementById('stop').addEventListener('click',function(e){
+        clearInterval(dateInderval)
+    });
+
+    document.getElementById('start').addEventListener('click',function(e){
+        dateInderval = setInterval(date,1000,"sharma","aman")
+    });
+
+    
+</script>
+</html>

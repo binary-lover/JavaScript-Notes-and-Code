@@ -1,6 +1,7 @@
 # projects related to markdown
 
 ## project link
+
 [click here](https://stackblitz.com/edit/dom-project-chaiaurcode-adqzbr?file=index.html)
 
 # solution code
@@ -69,6 +70,7 @@ form.addEventListener('submit',function (e){
 ```
 
 ### Project 3 solution
+
 ```javascript
 let clock = document.getElementById('clock');
         setInterval(function(){
@@ -79,7 +81,9 @@ let clock = document.getElementById('clock');
         }, 1000)
 
 ```
+
 ### Project 4 solution
+
 ```javascript
 let randomNumber = parseInt(Math.random() * 100 + 1);
 
@@ -173,4 +177,67 @@ function endGame() {
   newGame();
 }
 
+```
+
+### Project 5 solution
+
+```js
+const incert = document.getElementById('insert')
+
+// const elm = document.createElement('span')
+window.addEventListener('keydown',function(e){
+  lucky = `
+  <div class = 'color'>
+  <table>
+  <tr>
+    <th>key</th>
+    <th>keycode</th>
+    <th>code</th>
+  </tr>
+  <tr>
+    <td>${e.key === " "? "Space" : e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+</div>
+`
+incert.innerHTML = lucky
+})
+
+```
+
+### Project 6 solution
+
+```js
+let body = document.body
+const start = document.getElementById('start');
+const stop = document.getElementById('stop');
+
+
+let randomColor = function(){
+  const RandomcolorR = String(Math.floor(Math.random()*16).toString(16)) + String(Math.floor(Math.random()*16).toString(16))
+  const RandomcolorG = String(Math.floor(Math.random()*16).toString(16)) + String(Math.floor(Math.random()*16).toString(16))
+  const RandomcolorB = String(Math.floor(Math.random()*16).toString(16)) + String(Math.floor(Math.random()*16).toString(16))
+  const color = `#${RandomcolorR}${RandomcolorG}${RandomcolorB}`
+  return color
+}
+
+const changeColor = function(){
+  body.style.background = randomColor()
+  console.log(randomColor())
+}
+
+let sInterval = null;
+
+start.addEventListener('click',function(e){
+  if(sInterval == null){
+    sInterval = setInterval(changeColor,1000)
+  }
+});
+
+stop.addEventListener('click',function(e){
+  clearInterval(sInterval) 
+  sInterval = null;
+}); 
 ```
