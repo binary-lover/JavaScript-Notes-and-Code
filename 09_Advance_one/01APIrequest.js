@@ -7,15 +7,12 @@ let followers = document.createElement('span');
 
 
 function displayCard(data){
-    
     document.querySelector('.card').style.display = 'block';
     console.log(data.avatar_url);
     image.setAttribute('src',data.avatar_url);
     cardTitle.innerHTML = `<h5>Name: ${data.name}</h5>`;
     followers.innerHTML = `<h5>Followers: ${data.followers}</h5>`;
-    document.querySelector(".card-title").appendChild(followers);
-
-    
+    document.querySelector(".card-title").appendChild(followers); 
 }
 
 submitBtn.addEventListener("click", function () {
