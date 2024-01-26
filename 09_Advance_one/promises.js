@@ -81,3 +81,5 @@ fetch('https://api.github.com/users/binary-lover')
 .catch((error)=>{
     console.log("some error",error);
 })
+
+// fetch, async-await, Promise
