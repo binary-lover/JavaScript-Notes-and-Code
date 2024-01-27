@@ -11,9 +11,9 @@
 * The ... Operator &#x2714;
 * For/of &#x2714;
 * Map Objects &#x2714;
-* Set Objects
-* Classes
-* Promises
+* Set Objects &#x2714;
+* Classes &#x2714;
+* Promises &#x2714;
 * Symbol &#x2714;
 * Default Parameters &#x2714;
 * Function Rest Parameter &#x2714;
